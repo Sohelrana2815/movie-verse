@@ -1,0 +1,5 @@
+Background / Dominant (60%): #0F172A (Rich Dark Navy / Slate)
+
+Surface / Cards / Secondary (30%): #1E293B (Elevated Charcoal Slate)
+
+Accent / CTA / Highlights (10%): #E11D48 (Cinematic Crimson Red)
