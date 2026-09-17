@@ -14,3 +14,17 @@ export const fetchPopularMovies = async () => {
 
   return res.json();
 };
+
+export const searchMovies = async (query) => {
+  const res = await fetch(
+    `${BASE_URL}/search/movie?query=${encodeURIComponent(query)}&include_adult=false&language=en-US&page=1`,
+    {
+      headers: {
+        accept: "application/json",
+        Authorization: `Bearer ${READ_API_TOKEN}`,
+      },
+    },
+  );
+  if (!res.ok) throw new Error(`Failed to fetch search results: ${res.status}`);
+  return res.json();
+};

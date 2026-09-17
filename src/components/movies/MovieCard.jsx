@@ -1,16 +1,20 @@
+import { getTmdbImageUrl } from "../../utils/tmdbImage";
+
 export default function MovieCard({ movie }) {
   return (
     <article>
       <img
-        src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
+        src={getTmdbImageUrl(movie.poster_path, "original")}
         alt={movie.title}
       />
 
       <h2>{movie.title}</h2>
 
-      <p>Rating: {movie.vote_average}</p>
+      <p>⭐ {movie.vote_average.toFixed(1)}</p>
 
       <p>{movie.release_date}</p>
+
+      <button type="button">See Details</button>
     </article>
   );
 }
