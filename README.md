@@ -1,16 +1,75 @@
-# React + Vite
+# 🎬 Movie Verse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Movie Verse is a responsive movie discovery application built with **React** and **Vite**. Users can explore movies, search for specific titles, and view detailed information about each movie.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Browse popular movies
+* Search movies by title
+* Responsive movie card grid
+* View movie details in a modal
+* Movie ratings and release dates
+* Responsive design for mobile and desktop
+* TMDB API integration
 
-## React Compiler
+## 🛠️ Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Vite
+* JavaScript
+* Tailwind CSS
+* TMDB API
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clone the repository:
+
+```bash
+git clone <your-repository-url>
+```
+
+Install dependencies:
+
+```bash
+pnpm install
+```
+
+Create a `.env` file and add your TMDB API configuration:
+
+```env
+VITE_TMDB_BASE_URL=your_tmdb_base_url
+VITE_TMDB_API_READ_ACCESS_TOKEN=your_tmdb_read_access_token
+```
+
+Start the development server:
+
+```bash
+pnpm run dev
+```
+
+The application will be available at:
+
+```text
+http://localhost:5173
+```
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/
+├── pages/
+├── services/
+├── utils/
+├── router/
+├── App.jsx
+└── main.jsx
+```
+
+## 🌐 API
+
+Movie data is provided by [The Movie Database (TMDB)](https://www.themoviedb.org/).
+
+## 📄 License
+
+This project was created for educational purposes.
